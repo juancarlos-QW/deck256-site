@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Conheça o Deck 256 Bar & Restaurante: comida boa, drinks, sinuca e música."
+    />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Sobre · Deck 256</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Pular para o conteúdo</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html" aria-label="Deck 256 — início"
+          ><img src="assets/logo.webp" alt="Deck 256" width="651" height="189"
+        /></a>
+        <button
+          class="nav-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="navigation" class="site-nav" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="cardapio.html">Cardápio</a>
+          <a href="sobre.html" aria-current="page">Sobre</a>
+          <a href="eventos.html">Eventos</a>
+          <a class="btn btn-sm" href="index.html#reserva">Reservar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="hero-media" data-parallax="0.2">
+          <img src="assets/sobre.webp" alt="" fetchpriority="high" />
+        </div>
+        <div class="wrap">
+          <p class="eyebrow intro" style="--i: -6">Nossa história</p>
+          <h1 data-split>Sobre o Deck</h1>
+          <p class="intro" style="--i: -4">
+            Um bar e restaurante feito pra reunir gente, com comida boa, drink
+            gelado e aquela resenha que ninguém quer que acabe.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap split">
+          <div class="split-media" data-reveal="left">
+            <img src="assets/comida-2.webp" alt="Salão do Deck 256 com porção servida" loading="lazy" />
+            <div class="badge">256<small>MOTIVOS PRA VOLTAR</small></div>
+          </div>
+          <div class="split-copy" data-reveal="right">
+            <p class="eyebrow">Quem somos</p>
+            <h2 class="title">Feito pra <em>reunir</em></h2>
+            <p>
+              O Deck 256 nasceu da vontade de criar um lugar sem frescura, onde
+              dá pra chegar de chinelo ou arrumado, pra um chopp rápido ou pra
+              comemorar a noite inteira.
+            </p>
+            <p>
+              Aqui o balcão é ponto de encontro, a mesa de sinuca vira
+              campeonato e a cozinha capricha em cada porção que sai.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="wrap split reverse">
+          <div class="split-media" data-reveal="right">
+            <img src="assets/cozinha.webp" alt="Cozinheiro preparando prato na chapa" loading="lazy" />
+          </div>
+          <div class="split-copy" data-reveal="left">
+            <p class="eyebrow">Cozinha & Bar</p>
+            <h2 class="title">Capricho em <em>cada detalhe</em></h2>
+            <p>
+              Nossas porções são feitas na hora, com ingredientes frescos e
+              aquele tempero que faz pedir mais uma. No bar, drinks clássicos e
+              autorais preparados com cuidado.
+            </p>
+            <a class="btn" href="cardapio.html">Ver cardápio <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">O que você encontra</p>
+            <h2 class="title">Tudo num <em>lugar só</em></h2>
+          </div>
+          <div class="features" data-stagger>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 4h10l-5 7v7m-4 2h8M5 4h3"/><path d="M7 7h10"/></svg>
+              <h3>Drinks</h3>
+              <p>Clássicos, autorais e caipirinhas de vários sabores.</p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 10.5v3M11 11h1"/></svg>
+              <h3>Sinuca</h3>
+              <p>Mesas pra jogar com os amigos enquanto curte a noite.</p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+              <h3>Música</h3>
+              <p>Playlist selecionada e noites com som ao vivo.</p>
+            </article>
+            <article class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7m0 0H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7Zm0 0h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7Z"/></svg>
+              <h3>Eventos</h3>
+              <p>Aniversários, confraternizações e noites temáticas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="wrap">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Dúvidas</p>
+            <h2 class="title">Bom <em>saber</em></h2>
+          </div>
+          <div class="faq" data-stagger>
+            <details>
+              <summary>Onde vocês ficam?</summary>
+              <p>Rua Exemplo, 256 · Centro — Sua Cidade/UF.</p>
+            </details>
+            <details>
+              <summary>Precisa reservar?</summary>
+              <p>Não é obrigatório, mas nos fins de semana recomendamos. É só reservar pelo formulário do site ou pelo nosso WhatsApp.</p>
+            </details>
+            <details>
+              <summary>Posso comemorar aniversário aí?</summary>
+              <p>Claro! Fale com a gente pelo WhatsApp que montamos a mesa pra sua galera.</p>
+            </details>
+            <details>
+              <summary>Vocês têm opções sem álcool e vegetarianas?</summary>
+              <p>Sim. Temos sucos, refrigerantes, drinks sem álcool e opções veggie no cardápio.</p>
+            </details>
+            <details>
+              <summary>Quais formas de pagamento vocês aceitam?</summary>
+              <p>Pix, cartões de débito e crédito e dinheiro.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="hero-media" data-parallax="0.15">
+          <img src="assets/brinde.webp" alt="" loading="lazy" />
+        </div>
+        <div class="wrap" data-reveal>
+          <p class="eyebrow">Bora?</p>
+          <h2 class="title">Chama a galera e <em>vem pro Deck</em></h2>
+          <a class="btn" href="index.html#reserva">Reservar mesa <span class="arrow">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <img src="assets/logo.webp" alt="Deck 256" loading="lazy" />
+            <p>Bar & Restaurante. Drinks, porções, sinuca e música boa.</p>
+            <div class="socials">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+              <a data-whatsapp="Olá, Deck 256!" href="https://wa.me/5500000000000" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg></a>
+            </div>
+          </div>
+          <div>
+            <h3>Navegue</h3>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="cardapio.html">Cardápio</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="eventos.html">Eventos</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Horários</h3>
+            <ul>
+              <li>Qua a Sex · 18h às 00h</li>
+              <li>Sábado · 17h às 02h</li>
+              <li>Domingo · 17h às 23h</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Endereço</h3>
+            <address>Rua Exemplo, 256 · Centro<br />Sua Cidade — UF</address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Deck 256 Bar & Restaurante. Todos os direitos reservados.</span>
+          <span>Beba com moderação. Proibida a venda para menores de 18 anos.</span>
+        </div>
+      </div>
+    </footer>
+
+    <a class="whatsapp-float" data-whatsapp="Olá, Deck 256!" href="https://wa.me/5500000000000" aria-label="Fale conosco no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg></a>
+    <button class="back-top" aria-label="Voltar ao topo">↑</button>
+
+    <dialog id="lightbox" aria-label="Visualizador de imagem">
+      <button class="close-viewer" aria-label="Fechar imagem">×</button>
+      <img alt="" />
+    </dialog>
+  </body>
+</html>

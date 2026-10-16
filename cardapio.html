@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Cardápio do Deck 256: porções, lanches, pratos, drinks, cervejas e chopp."
+    />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Cardápio · Deck 256</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Pular para o conteúdo</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html" aria-label="Deck 256 — início"
+          ><img src="assets/logo.webp" alt="Deck 256" width="651" height="189"
+        /></a>
+        <button
+          class="nav-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="navigation" class="site-nav" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="cardapio.html" aria-current="page">Cardápio</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="eventos.html">Eventos</a>
+          <a class="btn btn-sm" href="index.html#reserva">Reservar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="hero-media" data-parallax="0.2">
+          <img src="assets/picanha.webp" alt="" fetchpriority="high" />
+        </div>
+        <div class="wrap">
+          <p class="eyebrow intro" style="--i: -6">Bar & Cozinha</p>
+          <h1 data-split>Cardápio</h1>
+          <p class="intro" style="--i: -4">
+            Porções pra dividir, lanches, pratos e uma carta de drinks pra
+            acompanhar a noite inteira.
+          </p>
+        </div>
+      </section>
+
+      <div class="menu-tabs-wrap">
+        <div class="wrap menu-tabs" role="tablist" aria-label="Categorias do cardápio">
+          <button role="tab" id="tab-porcoes" aria-controls="panel-porcoes" aria-selected="true" tabindex="0" data-tab="porcoes">Porções</button>
+          <button role="tab" id="tab-lanches" aria-controls="panel-lanches" aria-selected="false" tabindex="-1" data-tab="lanches">Lanches</button>
+          <button role="tab" id="tab-pratos" aria-controls="panel-pratos" aria-selected="false" tabindex="-1" data-tab="pratos">Pratos</button>
+          <button role="tab" id="tab-drinks" aria-controls="panel-drinks" aria-selected="false" tabindex="-1" data-tab="drinks">Drinks</button>
+          <button role="tab" id="tab-cervejas" aria-controls="panel-cervejas" aria-selected="false" tabindex="-1" data-tab="cervejas">Cervejas & Chopp</button>
+          <button role="tab" id="tab-doses" aria-controls="panel-doses" aria-selected="false" tabindex="-1" data-tab="doses">Doses & Sem álcool</button>
+          <span class="tab-indicator" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="wrap">
+          <p class="menu-hint"><span aria-hidden="true">👆</span> Passe o mouse ou toque em um item para ver a foto</p>
+          <!-- PORÇÕES -->
+          <div class="menu-panel" role="tabpanel" id="panel-porcoes" aria-labelledby="tab-porcoes">
+            <figure class="menu-panel-media" style="margin: 0">
+              <img src="assets/comida-1.webp" alt="Fritas com iscas de carne" loading="lazy" />
+              <figcaption>Pra dividir</figcaption>
+            </figure>
+            <div>
+              <h2>Porções</h2>
+              <p>Servem bem de 2 a 4 pessoas.</p>
+              <ul class="menu-list">
+                <li class="menu-item" tabindex="0" data-img="assets/comida-1.webp"><div class="menu-item-head"><h3>Fritas com iscas de carne <span class="tag">Mais pedida</span></h3><span class="dots"></span><span class="price">R$ 69</span></div><p>Batata frita crocante com iscas de alcatra acebolada e maionese da casa.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/batata.webp"><div class="menu-item-head"><h3>Batata frita</h3><span class="dots"></span><span class="price">R$ 32</span></div><p>Porção generosa, com opção de cheddar e bacon (+R$ 10).</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/comida-2.webp"><div class="menu-item-head"><h3>Pão de alho especial do Deck</h3><span class="dots"></span><span class="price">R$ 34</span></div><p>Pão crocante gratinado com queijo, alho e cobertura especial da casa.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/frango.webp"><div class="menu-item-head"><h3>Frango a passarinho</h3><span class="dots"></span><span class="price">R$ 49</span></div><p>Temperado com alho e limão, sequinho e crocante.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/calabresa.webp"><div class="menu-item-head"><h3>Calabresa acebolada</h3><span class="dots"></span><span class="price">R$ 42</span></div><p>Acompanha pão francês e vinagrete.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/mandioca.webp"><div class="menu-item-head"><h3>Mandioca frita</h3><span class="dots"></span><span class="price">R$ 36</span></div><p>Com manteiga de garrafa e queijo coalho.</p></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- LANCHES -->
+          <div class="menu-panel" role="tabpanel" id="panel-lanches" aria-labelledby="tab-lanches" hidden>
+            <figure class="menu-panel-media" style="margin: 0">
+              <img src="assets/burger.webp" alt="Hambúrguer artesanal" loading="lazy" />
+              <figcaption>Artesanais</figcaption>
+            </figure>
+            <div>
+              <h2>Lanches</h2>
+              <p>Todos acompanham batata frita.</p>
+              <ul class="menu-list">
+                <li class="menu-item" tabindex="0" data-img="assets/burger.webp"><div class="menu-item-head"><h3>Deck Burger <span class="tag">Da casa</span></h3><span class="dots"></span><span class="price">R$ 39</span></div><p>Blend de 180g, cheddar, bacon, cebola caramelizada e molho especial.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/smash.webp"><div class="menu-item-head"><h3>Smash duplo</h3><span class="dots"></span><span class="price">R$ 34</span></div><p>Dois smashes de 90g, queijo prato e picles.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/xsalada.webp"><div class="menu-item-head"><h3>X-Salada</h3><span class="dots"></span><span class="price">R$ 29</span></div><p>Hambúrguer, queijo, alface, tomate e maionese.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/veggie.webp"><div class="menu-item-head"><h3>Burger veggie</h3><span class="dots"></span><span class="price">R$ 35</span></div><p>Hambúrguer de grão-de-bico, queijo e rúcula.</p></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- PRATOS -->
+          <div class="menu-panel" role="tabpanel" id="panel-pratos" aria-labelledby="tab-pratos" hidden>
+            <figure class="menu-panel-media" style="margin: 0">
+              <img src="assets/picanha.webp" alt="Bife com batatas" loading="lazy" />
+              <figcaption>Pratos</figcaption>
+            </figure>
+            <div>
+              <h2>Pratos</h2>
+              <p>Servem 1 pessoa bem servida.</p>
+              <ul class="menu-list">
+                <li class="menu-item" tabindex="0" data-img="assets/picanha.webp"><div class="menu-item-head"><h3>Picanha na chapa</h3><span class="dots"></span><span class="price">R$ 79</span></div><p>Com arroz, farofa, vinagrete e fritas.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/parmegiana.webp"><div class="menu-item-head"><h3>Parmegiana de frango</h3><span class="dots"></span><span class="price">R$ 54</span></div><p>Com arroz e fritas.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/executivo.webp"><div class="menu-item-head"><h3>Executivo do dia</h3><span class="dots"></span><span class="price">R$ 35</span></div><p>Pergunte ao garçom a opção do dia.</p></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- DRINKS -->
+          <div class="menu-panel" role="tabpanel" id="panel-drinks" aria-labelledby="tab-drinks" hidden>
+            <figure class="menu-panel-media" style="margin: 0">
+              <img src="assets/drink-neon.webp" alt="Bartender preparando drink" loading="lazy" />
+              <figcaption>Feitos na hora</figcaption>
+            </figure>
+            <div>
+              <h2>Drinks</h2>
+              <p>Clássicos e autorais.</p>
+              <ul class="menu-list">
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/gintonica.webp"><div class="menu-item-head"><h3>Gin tônica da casa <span class="tag">Favorito</span></h3><span class="dots"></span><span class="price">R$ 32</span></div><p>Gin, tônica, frutas vermelhas e especiarias.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/caipirinha.webp"><div class="menu-item-head"><h3>Caipirinha</h3><span class="dots"></span><span class="price">R$ 22</span></div><p>Limão, morango, maracujá ou kiwi. Com cachaça, vodka ou saquê.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/drinks.webp"><div class="menu-item-head"><h3>Deck 256</h3><span class="dots"></span><span class="price">R$ 34</span></div><p>Drink autoral com vodka, frutas vermelhas, limão e espuma de gengibre.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/moscow.webp"><div class="menu-item-head"><h3>Moscow Mule</h3><span class="dots"></span><span class="price">R$ 30</span></div><p>Vodka, limão, xarope de gengibre e espuma.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/aperol.webp"><div class="menu-item-head"><h3>Aperol Spritz</h3><span class="dots"></span><span class="price">R$ 32</span></div><p>Aperol, espumante e água com gás.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/negroni.webp"><div class="menu-item-head"><h3>Negroni</h3><span class="dots"></span><span class="price">R$ 34</span></div><p>Gin, Campari e vermute rosso.</p></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CERVEJAS -->
+          <div class="menu-panel" role="tabpanel" id="panel-cervejas" aria-labelledby="tab-cervejas" hidden>
+            <figure class="menu-panel-media" style="margin: 0">
+              <img src="assets/chopp.webp" alt="Chopp sendo tirado" loading="lazy" />
+              <figcaption>Trincando</figcaption>
+            </figure>
+            <div>
+              <h2>Cervejas & Chopp</h2>
+              <p>Sempre no ponto certo.</p>
+              <ul class="menu-list">
+                <li class="menu-item" tabindex="0" data-img="assets/chopp.webp"><div class="menu-item-head"><h3>Chopp Pilsen 300ml</h3><span class="dots"></span><span class="price">R$ 12</span></div><p>Também em caneca de 500ml (R$ 18).</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/torre.webp"><div class="menu-item-head"><h3>Torre de chopp 2,5L</h3><span class="dots"></span><span class="price">R$ 85</span></div><p>Pra mesa toda.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/cerveja.webp"><div class="menu-item-head"><h3>Cerveja 600ml</h3><span class="dots"></span><span class="price">R$ 16</span></div><p>Consulte as marcas disponíveis.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/longneck.webp"><div class="menu-item-head"><h3>Long neck</h3><span class="dots"></span><span class="price">R$ 12</span></div><p>Diversas marcas, nacionais e importadas.</p></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- DOSES -->
+          <div class="menu-panel" role="tabpanel" id="panel-doses" aria-labelledby="tab-doses" hidden>
+            <figure class="menu-panel-media" style="margin: 0">
+              <img src="assets/garrafas.webp" alt="Garrafas iluminadas no bar" loading="lazy" />
+              <figcaption>Doses</figcaption>
+            </figure>
+            <div>
+              <h2>Doses & Sem álcool</h2>
+              <p>Pra brindar ou pra acompanhar.</p>
+              <ul class="menu-list">
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/whisky.webp"><div class="menu-item-head"><h3>Dose de whisky</h3><span class="dots"></span><span class="price">R$ 18</span></div><p>Consulte os rótulos disponíveis.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/tequila.webp"><div class="menu-item-head"><h3>Dose de tequila</h3><span class="dots"></span><span class="price">R$ 15</span></div><p>Com sal e limão.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/refri.webp"><div class="menu-item-head"><h3>Refrigerante lata</h3><span class="dots"></span><span class="price">R$ 7</span></div><p>Diversos sabores.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/suco.webp"><div class="menu-item-head"><h3>Suco natural</h3><span class="dots"></span><span class="price">R$ 10</span></div><p>Laranja, limão, maracujá ou abacaxi com hortelã.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/mocktail.webp"><div class="menu-item-head"><h3>Drink sem álcool</h3><span class="dots"></span><span class="price">R$ 18</span></div><p>Pergunte ao bartender a opção do dia.</p></li>
+                <li class="menu-item" tabindex="0" data-img="assets/cardapio/agua.webp"><div class="menu-item-head"><h3>Água com ou sem gás</h3><span class="dots"></span><span class="price">R$ 5</span></div></li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="menu-note">Preços e disponibilidade podem mudar sem aviso prévio. Taxa de serviço opcional de 10%.</p>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="hero-media" data-parallax="0.15">
+          <img src="assets/salao.webp" alt="" loading="lazy" />
+        </div>
+        <div class="wrap" data-reveal>
+          <p class="eyebrow">Bateu a fome?</p>
+          <h2 class="title">Sua mesa <em>te espera</em></h2>
+          <a class="btn" href="index.html#reserva">Reservar mesa <span class="arrow">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <img src="assets/logo.webp" alt="Deck 256" loading="lazy" />
+            <p>Bar & Restaurante. Drinks, porções, sinuca e música boa.</p>
+            <div class="socials">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+              <a data-whatsapp="Olá, Deck 256!" href="https://wa.me/5500000000000" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg></a>
+            </div>
+          </div>
+          <div>
+            <h3>Navegue</h3>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="cardapio.html">Cardápio</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="eventos.html">Eventos</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Horários</h3>
+            <ul>
+              <li>Qua a Sex · 18h às 00h</li>
+              <li>Sábado · 17h às 02h</li>
+              <li>Domingo · 17h às 23h</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Endereço</h3>
+            <address>Rua Exemplo, 256 · Centro<br />Sua Cidade — UF</address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Deck 256 Bar & Restaurante. Todos os direitos reservados.</span>
+          <span>Beba com moderação. Proibida a venda para menores de 18 anos.</span>
+        </div>
+      </div>
+    </footer>
+
+    <a class="whatsapp-float" data-whatsapp="Olá, Deck 256!" href="https://wa.me/5500000000000" aria-label="Fale conosco no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg></a>
+    <button class="back-top" aria-label="Voltar ao topo">↑</button>
+
+    <dialog id="lightbox" aria-label="Visualizador de imagem">
+      <button class="close-viewer" aria-label="Fechar imagem">×</button>
+      <img alt="" />
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Agenda de eventos do Deck 256: noites temáticas, happy hour, som ao vivo e festas particulares."
+    />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Eventos · Deck 256</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Pular para o conteúdo</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html" aria-label="Deck 256 — início"
+          ><img src="assets/logo.webp" alt="Deck 256" width="651" height="189"
+        /></a>
+        <button
+          class="nav-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="navigation" class="site-nav" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="cardapio.html">Cardápio</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="eventos.html" aria-current="page">Eventos</a>
+          <a class="btn btn-sm" href="index.html#reserva">Reservar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero neon">
+        <div class="hero-media" data-parallax="0.2">
+          <img src="assets/drink-neon.webp" alt="" fetchpriority="high" />
+        </div>
+        <div class="wrap">
+          <p class="eyebrow intro" style="--i: -6">Agenda</p>
+          <h1 data-split>Eventos</h1>
+          <p class="intro" style="--i: -4">
+            Noites temáticas, música, sinuca e muito drink. Confira o que vem
+            por aí no Deck.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap event-feature">
+          <div class="tilt" data-reveal="zoom">
+            <div class="tilt-inner">
+              <img src="assets/promocao.webp" alt="Cartaz da Noite só para mulheres, dia 16/10" loading="lazy" />
+            </div>
+          </div>
+          <div class="event-copy" data-reveal="right">
+            <p class="eyebrow">Em destaque</p>
+            <h2 class="title">Noite só para <em>mulheres</em></h2>
+            <div class="event-date">16/10 <small>A PARTIR DAS 19H</small></div>
+            <p>
+              Será uma noite muito divertida! Porque nós mulheres merecemos uma
+              noite só nossa. Brindar também é se cuidar.
+            </p>
+            <ul class="event-perks">
+              <li>🎵 Música boa</li>
+              <li>🍹 Drinks</li>
+              <li>🎱 Sinuca</li>
+              <li>🎉 Diversão garantida</li>
+            </ul>
+            <div class="countdown" data-countdown="2026-10-16T19:00:00-03:00" aria-label="Contagem regressiva para o evento">
+              <div><b>00</b><span>dias</span></div>
+              <div><b>00</b><span>horas</span></div>
+              <div><b>00</b><span>min</span></div>
+              <div><b>00</b><span>seg</span></div>
+            </div>
+            <a class="btn btn-pink" data-whatsapp="Olá! Quero reservar uma mesa para a Noite só para mulheres (16/10)." href="https://wa.me/5500000000000">Reservar pro evento <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="wrap">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Toda semana</p>
+            <h2 class="title">Agenda <em>fixa</em></h2>
+          </div>
+          <div class="agenda" data-stagger>
+            <article class="agenda-card">
+              <div class="day">QUA</div>
+              <h3>Noite da sinuca</h3>
+              <p>Chama os parceiros pra disputar a mesa e garantir a resenha.</p>
+            </article>
+            <article class="agenda-card">
+              <div class="day">QUI</div>
+              <h3>Happy hour</h3>
+              <p>Saiu do trampo? Chopp gelado e porções pra relaxar.</p>
+            </article>
+            <article class="agenda-card">
+              <div class="day">SEX</div>
+              <h3>Som ao vivo</h3>
+              <p>Música boa pra começar o fim de semana do jeito certo.</p>
+            </article>
+            <article class="agenda-card">
+              <div class="day">SÁB</div>
+              <h3>Sábado no Deck</h3>
+              <p>A noite mais animada da semana, até tarde.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap split">
+          <div class="split-media" data-reveal="left">
+            <img src="assets/amigos.webp" alt="Grupo de amigos reunidos em volta da mesa" loading="lazy" />
+            <div class="badge">Sua<br />festa<small>AQUI NO DECK</small></div>
+          </div>
+          <div class="split-copy" data-reveal="right">
+            <p class="eyebrow">Eventos particulares</p>
+            <h2 class="title">Comemore <em>com a gente</em></h2>
+            <p>
+              Aniversários, confraternizações da empresa, despedidas e
+              reencontros. Reservamos espaço pra sua galera e ajudamos a montar
+              o cardápio de porções e drinks.
+            </p>
+            <a class="btn" data-whatsapp="Olá! Gostaria de fazer um orçamento para um evento no Deck 256." href="https://wa.me/5500000000000">Pedir orçamento <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="hero-media" data-parallax="0.15">
+          <img src="assets/brinde.webp" alt="" loading="lazy" />
+        </div>
+        <div class="wrap" data-reveal>
+          <p class="eyebrow">Fique por dentro</p>
+          <h2 class="title">Siga o Deck no <em>Instagram</em></h2>
+          <a class="btn" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Seguir <span class="arrow">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <img src="assets/logo.webp" alt="Deck 256" loading="lazy" />
+            <p>Bar & Restaurante. Drinks, porções, sinuca e música boa.</p>
+            <div class="socials">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+              <a data-whatsapp="Olá, Deck 256!" href="https://wa.me/5500000000000" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg></a>
+            </div>
+          </div>
+          <div>
+            <h3>Navegue</h3>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="cardapio.html">Cardápio</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="eventos.html">Eventos</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Horários</h3>
+            <ul>
+              <li>Qua a Sex · 18h às 00h</li>
+              <li>Sábado · 17h às 02h</li>
+              <li>Domingo · 17h às 23h</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Endereço</h3>
+            <address>Rua Exemplo, 256 · Centro<br />Sua Cidade — UF</address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Deck 256 Bar & Restaurante. Todos os direitos reservados.</span>
+          <span>Beba com moderação. Proibida a venda para menores de 18 anos.</span>
+        </div>
+      </div>
+    </footer>
+
+    <a class="whatsapp-float" data-whatsapp="Olá, Deck 256!" href="https://wa.me/5500000000000" aria-label="Fale conosco no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg></a>
+    <button class="back-top" aria-label="Voltar ao topo">↑</button>
+
+    <dialog id="lightbox" aria-label="Visualizador de imagem">
+      <button class="close-viewer" aria-label="Fechar imagem">×</button>
+      <img alt="" />
+    </dialog>
+  </body>
+</html>
